@@ -57,7 +57,7 @@
 send2 = ""
 send1 = ""
 send3 = ""
-dest=""
+dest=0
 class Graph():
  
     def __init__(self, vertices):
@@ -73,13 +73,13 @@ class Graph():
             if(src==node):
                 send3="source - "+str(node)+" destinnation - "+str(dest)+"\nMininmum distance - "+str(dist[dest])
             send2 = send2 + str(node) + "          " + str(dist[node]) + "\n"
+            print(send2)
 
-        # for i in range(self.V):
-        #     send1= send1+ str(i)
-        #     for j in range(self.V):
-        #              send1=send1+str(dist(j))
-        #     send1+="\n"   
-        # print("send1 -\n",send1)             
+        # for node in range(self.V):
+        #     send1=send1+str(node)
+        #     for ver in range(self.V):
+        #         send1=send1+str(dist[ver])
+        #     send1=send1+"\n"           
     
         
  
